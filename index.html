@@ -6,173 +6,154 @@
     <title>Aditi | Web Development Lab</title>
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Segoe UI', sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
         }
 
-        body{
-            background: linear-gradient(135deg, #0f172a, #312e81, #1e1b4b);
-            min-height:100vh;
-            color:white;
-            padding:30px;
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #020617, #1e1b4b, #312e81);
+            color: white;
+            padding: 30px;
         }
 
-        .container{
-            max-width:1150px;
-            margin:auto;
+        .container {
+            max-width: 1200px;
+            margin: auto;
         }
 
-        .header{
-            text-align:center;
-            margin-bottom:45px;
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 45px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 25px;
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
         }
 
-        .header h1{
-            font-size:46px;
-            margin-bottom:12px;
-            letter-spacing:1px;
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
         }
 
-        .header p{
-            color:#cbd5e1;
-            font-size:18px;
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+            margin-bottom: 8px;
         }
 
-        .grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
-            gap:22px;
+        .badge {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 18px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
         }
 
-        .card{
-            background:rgba(255,255,255,0.08);
-            border:1px solid rgba(255,255,255,0.12);
-            backdrop-filter:blur(10px);
-            border-radius:18px;
-            padding:28px 20px;
-            text-align:center;
-            transition:0.3s ease;
-            box-shadow:0 8px 18px rgba(0,0,0,0.15);
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 24px;
         }
 
-        .card:hover{
-            transform:translateY(-8px);
-            background:rgba(255,255,255,0.14);
+        .card {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.12);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 28px 20px;
+            text-align: center;
+            transition: all 0.35s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
         }
 
-        .card h3{
-            font-size:20px;
-            margin-bottom:14px;
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            background: rgba(255,255,255,0.12);
         }
 
-        .card a{
-            text-decoration:none;
-            background:linear-gradient(135deg,#3b82f6,#6366f1);
-            color:white;
-            padding:11px 22px;
-            border-radius:10px;
-            display:inline-block;
-            font-weight:500;
-            transition:0.3s;
+        .number {
+            width: 45px;
+            height: 45px;
+            margin: auto;
+            margin-bottom: 14px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
         }
 
-        .card a:hover{
-            transform:scale(1.05);
-            box-shadow:0 6px 14px rgba(59,130,246,0.4);
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
         }
 
-        footer{
-            text-align:center;
-            margin-top:45px;
-            color:#94a3b8;
-            font-size:15px;
+        .card a {
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #2563eb, #6366f1);
+            padding: 11px 24px;
+            border-radius: 10px;
+            display: inline-block;
+            font-weight: 500;
+            transition: 0.3s;
         }
 
+        .card a:hover {
+            box-shadow: 0 8px 18px rgba(59,130,246,0.4);
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #94a3b8;
+            font-size: 15px;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
 
-    <div class="header">
+    <div class="hero">
         <h1>Web Development Lab</h1>
-        <p>Aditi Sanjay Murgude | B.Tech Computer Science Engineering</p>
+        <p>Aditi Sanjay Murgude</p>
+        <p>B.Tech Computer Science Engineering</p>
+        <div class="badge">13 Experiments Completed</div>
     </div>
 
     <div class="grid">
 
-        <div class="card">
-            <h3>Experiment 1</h3>
-            <a href="Experiment-01-Web-Technology-Basics/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 2</h3>
-            <a href="Experiment-02-Static-Webpage/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 3</h3>
-            <a href="Experiment-03-Text-Formatting-Tags/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 4</h3>
-            <a href="Experiment-04-List-Tags/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 5</h3>
-            <a href="Experiment-05-Image-Tag/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 6</h3>
-            <a href="Experiment-06-Frames/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 7</h3>
-            <a href="Experiment-07-Links/text_as_link.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 8</h3>
-            <a href="Experiment-08-Table/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 9</h3>
-            <a href="Experiment-09-registration-webpage/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 10</h3>
-            <a href="Experiment-10-resume-as-webpage/index.html">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 11</h3>
-            <a href="Experiment-11-xml/library.xml">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 12</h3>
-            <a href="Experiment-12-XSLT/book_library.xml">Open</a>
-        </div>
-
-        <div class="card">
-            <h3>Experiment 13</h3>
-            <a href="Experiment-13/index.html">Open</a>
-        </div>
+        <div class="card"><div class="number">1</div><h3>Experiment 1</h3><a href="Experiment-01-Web-Technology-Basics/index.html">Open</a></div>
+        <div class="card"><div class="number">2</div><h3>Experiment 2</h3><a href="Experiment-02-Static-Webpage/index.html">Open</a></div>
+        <div class="card"><div class="number">3</div><h3>Experiment 3</h3><a href="Experiment-03-Text-Formatting-Tags/index.html">Open</a></div>
+        <div class="card"><div class="number">4</div><h3>Experiment 4</h3><a href="Experiment-04-List-Tags/index.html">Open</a></div>
+        <div class="card"><div class="number">5</div><h3>Experiment 5</h3><a href="Experiment-05-Image-Tag/index.html">Open</a></div>
+        <div class="card"><div class="number">6</div><h3>Experiment 6</h3><a href="Experiment-06-Frames/index.html">Open</a></div>
+        <div class="card"><div class="number">7</div><h3>Experiment 7</h3><a href="Experiment-07-Links/text_as_link.html">Open</a></div>
+        <div class="card"><div class="number">8</div><h3>Experiment 8</h3><a href="Experiment-08-Table/index.html">Open</a></div>
+        <div class="card"><div class="number">9</div><h3>Experiment 9</h3><a href="Experiment-09-registration-webpage/index.html">Open</a></div>
+        <div class="card"><div class="number">10</div><h3>Experiment 10</h3><a href="Experiment-10-resume-as-webpage/index.html">Open</a></div>
+        <div class="card"><div class="number">11</div><h3>Experiment 11</h3><a href="Experiment-11-xml/library.xml">Open</a></div>
+        <div class="card"><div class="number">12</div><h3>Experiment 12</h3><a href="Experiment-12-XSLT/book_library.xml">Open</a></div>
+        <div class="card"><div class="number">13</div><h3>Experiment 13</h3><a href="Experiment-13/index.html">Open</a></div>
 
     </div>
 
     <footer>
-        © 2026 Aditi Sanjay Murgude
+        © 2026 Aditi Sanjay Murgude | Web Development Lab Portfolio
     </footer>
 
 </div>
