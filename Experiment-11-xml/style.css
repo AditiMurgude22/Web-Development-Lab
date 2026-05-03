@@ -1,0 +1,48 @@
+library {
+    display: block;
+    background-color: #f8fafc;
+    color: #1e293b;
+    width: 100%;
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    background-color: #6366f1;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+book {
+    display: block;
+    margin: 15px 0;
+    padding: 15px;
+    border-left: 6px solid #6366f1;
+    background-color: #e0e7ff;
+    border-radius: 8px;
+}
+
+title {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #312e81;
+    margin-bottom: 8px;
+}
+
+author,
+publisher,
+edition,
+price {
+    display: block;
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: 4px;
+    color: #334155;
+}

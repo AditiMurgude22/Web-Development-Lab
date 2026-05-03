@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<library>
+    
+    <header>Aditi Digital Book Hub</header>
+
+    <book>
+        <title>Introduction to Web Development</title>
+        <author>Jon Duckett</author>
+        <publisher>Wiley India</publisher>
+        <edition>2nd Edition</edition>
+        <price>350</price>
+    </book>
+
+    <book>
+        <title>Python Programming</title>
+        <author>Guido Rossum</author>
+        <publisher>Tech Publications</publisher>
+        <edition>4th Edition</edition>
+        <price>450</price>
+    </book>
+
+    <book>
+        <title>Database Management Systems</title>
+        <author>Korth</author>
+        <publisher>McGraw Hill</publisher>
+        <edition>6th Edition</edition>
+        <price>650</price>
+    </book>
+
+    <book>
+        <title>Computer Networks and Security</title>
+        <author>Behrouz Forouzan</author>
+        <publisher>Pearson</publisher>
+        <edition>5th Edition</edition>
+        <price>550</price>
+    </book>
+
+    <book>
+        <title>Java Fundamentals</title>
+        <author>Herbert Schildt</author>
+        <publisher>Oracle Press</publisher>
+        <edition>3rd Edition</edition>
+        <price>400</price>
+    </book>
+
+</library>

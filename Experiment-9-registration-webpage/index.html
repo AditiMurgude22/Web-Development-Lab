@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Form</title>
+</head>
+<body style="font-family: Arial; background-color: #eef2f7;">
+
+    <div style="text-align:center; padding:8px; background:#dbeafe;">
+        <b>Aditi S Murgude </b> | Roll No: 100
+    </div>
+
+    <h2 align="center">Employee Registration</h2>
+
+    <form>
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+
+            First Name: <input type="text" required><br><br>
+            Last Name: <input type="text" required><br><br>
+            Email: <input type="email" required><br><br>
+
+            Gender:
+            <input type="radio" name="g"> Male
+            <input type="radio" name="g"> Female
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Work Info</b></legend>
+
+            Department:
+            <select>
+                <option>HR</option>
+                <option>IT</option>
+                <option>Sales</option>
+                <option>Marketing</option>
+            </select>
+            <br><br>
+
+            Joining Date: <input type="date"><br><br>
+            Resume: <input type="file">
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" required> Accept Terms<br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

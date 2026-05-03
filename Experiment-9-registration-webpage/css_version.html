@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+        }
+
+        .top-bar {
+            background: #6366f1;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .box {
+            width: 75%;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4f46e5;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+        }
+
+        .full {
+            grid-column: span 2;
+        }
+
+        .gender {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .btns {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .submit {
+            background: #6366f1;
+            color: white;
+        }
+
+        .reset {
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    Aditi S Murgude | Roll No: 100
+</div>
+
+<div class="box">
+    <h2>Employee Form</h2>
+
+    <form>
+        <div class="grid">
+
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" required>
+            </div>
+
+            <div class="field">
+                <label>Last Name</label>
+                <input type="text" required>
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+
+            <div class="field">
+                <label>Department</label>
+                <select>
+                    <option>Select</option>
+                    <option>HR</option>
+                    <option>IT</option>
+                    <option>Sales</option>
+                    <option>Marketing</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Joining Date</label>
+                <input type="date">
+            </div>
+
+            <div class="field">
+                <label>Gender</label>
+                <div class="gender">
+                    <label><input type="radio" name="g"> Male</label>
+                    <label><input type="radio" name="g"> Female</label>
+                    <label><input type="radio" name="g"> Other</label>
+                </div>
+            </div>
+
+            <div class="field full">
+                <label>About</label>
+                <textarea rows="3"></textarea>
+            </div>
+
+            <div class="field full">
+                <label>Upload Resume</label>
+                <input type="file">
+            </div>
+
+        </div>
+
+        <br>
+
+        <input type="checkbox" required> Information is correct
+
+        <div class="btns">
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Clear</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
