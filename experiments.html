@@ -1,5 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiments</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#fff1f2,#fdf2f8,#fce7f3);
+    padding:35px;
+    min-height:100vh;
+}
+
+h1{
+    text-align:center;
+    color:#5b4b51;
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.78);
+    backdrop-filter:blur(12px);
+    padding:28px;
+    border-radius:22px;
+    box-shadow:0 12px 28px rgba(217,119,155,0.12);
+    transition:.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#6b5563;
+    margin-bottom:18px;
+}
+
+.btn{
+    display:block;
+    text-decoration:none;
+    background:#f4a6c1;
+    color:white;
+    padding:12px;
+    margin:8px 0;
+    border-radius:10px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e892b2;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Web Development Experiments</h1>
+
 <div class="grid">
 
+<!-- EXP 1 -->
 <div class="card">
     <div class="icon">🌐</div>
     <h3>Experiment 1</h3>
@@ -7,6 +90,7 @@
     <a class="btn" href="Experiment-01-Web-Technology-Basics/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 2 -->
 <div class="card">
     <div class="icon">📄</div>
     <h3>Experiment 2</h3>
@@ -14,6 +98,7 @@
     <a class="btn" href="Experiment-02-Static-Webpage/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 3 -->
 <div class="card">
     <div class="icon">✍️</div>
     <h3>Experiment 3</h3>
@@ -21,6 +106,7 @@
     <a class="btn" href="Experiment-03-Text-Formatting-Tags/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 4 -->
 <div class="card">
     <div class="icon">📋</div>
     <h3>Experiment 4</h3>
@@ -28,6 +114,7 @@
     <a class="btn" href="Experiment-04-List-Tags/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 5 -->
 <div class="card">
     <div class="icon">🖼️</div>
     <h3>Experiment 5</h3>
@@ -35,6 +122,7 @@
     <a class="btn" href="Experiment-05-Image-Tag/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 6 -->
 <div class="card">
     <div class="icon">🪟</div>
     <h3>Experiment 6</h3>
@@ -42,13 +130,15 @@
     <a class="btn" href="Experiment-06-Frames/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 7 -->
 <div class="card">
     <div class="icon">🔗</div>
     <h3>Experiment 7</h3>
-    <a class="btn" href="Experiment-07-Links/text_as_link.html">Basic Version</a>
+    <a class="btn" href="Experiment-07-Links/index.html">Basic Version</a>
     <a class="btn" href="Experiment-07-Links/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 8 -->
 <div class="card">
     <div class="icon">📊</div>
     <h3>Experiment 8</h3>
@@ -56,6 +146,7 @@
     <a class="btn" href="Experiment-08-Table/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 9 -->
 <div class="card">
     <div class="icon">📝</div>
     <h3>Experiment 9</h3>
@@ -63,6 +154,7 @@
     <a class="btn" href="Experiment-09-registration-webpage/css_version.html">CSS Version</a>
 </div>
 
+<!-- EXP 10 -->
 <div class="card">
     <div class="icon">💼</div>
     <h3>Experiment 10</h3>
@@ -70,20 +162,21 @@
     <a class="btn" href="Experiment-10-resume-as-webpage/css_version.html">CSS Version</a>
 </div>
 
-<!-- NO CHANGE FOR 11, 12, 13 -->
-
+<!-- EXP 11 -->
 <div class="card">
     <div class="icon">📚</div>
     <h3>Experiment 11</h3>
     <a class="btn" href="Experiment-11-xml/library.xml">Open XML</a>
 </div>
 
+<!-- EXP 12 -->
 <div class="card">
     <div class="icon">⚙️</div>
     <h3>Experiment 12</h3>
     <a class="btn" href="Experiment-12-XSLT/book_library.xml">Open XML</a>
 </div>
 
+<!-- EXP 13 -->
 <div class="card">
     <div class="icon">🚀</div>
     <h3>Experiment 13</h3>
@@ -91,3 +184,6 @@
 </div>
 
 </div>
+
+</body>
+</html>
