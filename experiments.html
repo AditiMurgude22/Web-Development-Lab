@@ -14,15 +14,17 @@
 }
 
 body{
-    background:linear-gradient(135deg,#edf7f6,#e3ecf7,#f7f7fb);
+    background: linear-gradient(135deg, #dbeafe, #e0f2fe, #f0fdf4);
     padding:35px;
+    min-height:100vh;
 }
 
 h1{
     text-align:center;
-    color:#334155;
+    color:#1e3a8a;
     margin-bottom:40px;
     font-size:42px;
+    font-weight:700;
 }
 
 .grid{
@@ -34,17 +36,19 @@ h1{
 }
 
 .card{
-    background:rgba(255,255,255,0.72);
-    backdrop-filter:blur(12px);
+    background: rgba(255,255,255,0.82);
+    backdrop-filter: blur(12px);
     padding:28px;
     border-radius:22px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+    box-shadow:0 12px 28px rgba(59,130,246,0.12);
     transition:.3s;
     text-align:center;
+    border:1px solid rgba(255,255,255,0.5);
 }
 
 .card:hover{
     transform:translateY(-8px);
+    box-shadow:0 16px 30px rgba(59,130,246,0.18);
 }
 
 .icon{
@@ -53,14 +57,14 @@ h1{
 }
 
 .card h3{
-    color:#475569;
+    color:#334155;
     margin-bottom:18px;
 }
 
 .card a{
     display:block;
     text-decoration:none;
-    background:#7c93c3;
+    background:#3b82f6;
     color:white;
     padding:12px;
     margin:8px 0;
@@ -70,7 +74,7 @@ h1{
 }
 
 .card a:hover{
-    background:#6881b5;
+    background:#2563eb;
 }
 </style>
 </head>
