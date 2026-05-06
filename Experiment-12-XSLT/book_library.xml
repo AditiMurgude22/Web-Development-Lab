@@ -1,55 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="book_style.xsl"?>
-
-<!-- Aditi Sanjay Murgude | Roll No: 100 -->
 
 <library>
 
-    <info>
-        <name>Aditi Murgude</name>
-        <rollNo>100</rollNo>
-        <experiment>Experiment 12</experiment>
-        <title>XML with XSLT Transformation - Digital Library</title>
-    </info>
+  <book>
+    <title>Atomic Habits</title>
+    <author>James Clear</author>
+    <country>USA</country>
+    <price>450</price>
+    <year>2018</year>
+  </book>
 
-    <book>
-        <title>Atomic Habits</title>
-        <author>James Clear</author>
-        <country>USA</country>
-        <price>450</price>
-        <year>2018</year>
-    </book>
+  <book>
+    <title>Think and Grow Rich</title>
+    <author>Napoleon Hill</author>
+    <country>USA</country>
+    <price>399</price>
+    <year>1937</year>
+  </book>
 
-    <book>
-        <title>Think and Grow Rich</title>
-        <author>Napoleon Hill</author>
-        <country>USA</country>
-        <price>399</price>
-        <year>1937</year>
-    </book>
+  <book>
+    <title>Ignited Minds</title>
+    <author>A.P.J Abdul Kalam</author>
+    <country>India</country>
+    <price>350</price>
+    <year>2002</year>
+  </book>
 
-    <book>
-        <title>Ignited Minds</title>
-        <author>A.P.J Abdul Kalam</author>
-        <country>India</country>
-        <price>350</price>
-        <year>2002</year>
-    </book>
+  <book>
+    <title>The Psychology of Money</title>
+    <author>Morgan Housel</author>
+    <country>USA</country>
+    <price>499</price>
+    <year>2020</year>
+  </book>
 
-    <book>
-        <title>The Psychology of Money</title>
-        <author>Morgan Housel</author>
-        <country>USA</country>
-        <price>499</price>
-        <year>2020</year>
-    </book>
-
-    <book>
-        <title>Ikigai</title>
-        <author>Hector Garcia</author>
-        <country>Japan</country>
-        <price>420</price>
-        <year>2016</year>
-    </book>
+  <book>
+    <title>Ikigai</title>
+    <author>Hector Garcia</author>
+    <country>Japan</country>
+    <price>420</price>
+    <year>2016</year>
+  </book>
 
 </library>
