@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="book_style.xsl"?>
 
 <library>
 
@@ -6,7 +7,7 @@
         <name>Aditi Murgude</name>
         <rollNo>100</rollNo>
         <experiment>Experiment 11</experiment>
-        <title>XML Document for Digital Library</title>
+        <title>XML Digital Library</title>
     </studentInfo>
 
     <header>Aditi Digital Book Hub</header>
