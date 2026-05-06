@@ -1,290 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aditi Murgude Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 10 - Resume</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f7;
+            color: #444;
+        }
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Outfit',sans-serif;
-}
+        .top-bar {
+            background-color: #f8c8dc;
+            padding: 15px 30px;
+            color: #8b3a62;
+            font-weight: bold;
+        }
 
-body{
-    background:#eef2ff;
-    padding:25px;
-    color:#1e293b;
-}
+        .header {
+            text-align: center;
+            padding: 25px;
+            background-color: white;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
 
-.container{
-    max-width:1100px;
-    margin:auto;
-    background:white;
-    border-radius:24px;
-    overflow:hidden;
-    box-shadow:0 20px 40px rgba(0,0,0,0.12);
-}
+        .header h1 {
+            margin: 5px;
+            color: #8b3a62;
+        }
 
-.header{
-    background:linear-gradient(135deg,#4f46e5,#9333ea);
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
+        .header p {
+            margin: 6px;
+        }
 
-.profile{
-    width:110px;
-    height:110px;
-    border-radius:50%;
-    background:rgba(255,255,255,0.2);
-    margin:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:40px;
-    font-weight:bold;
-    margin-bottom:18px;
-}
+        .resume-container {
+            display: flex;
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            gap: 20px;
+        }
 
-.header h1{
-    font-size:38px;
-    margin-bottom:8px;
-}
+        .left-panel {
+            width: 30%;
+            background-color: #f8c8dc;
+            padding: 25px;
+            border-radius: 15px;
+        }
 
-.header p{
-    font-size:18px;
-}
+        .right-panel {
+            width: 70%;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
 
-.main{
-    display:grid;
-    grid-template-columns:320px 1fr;
-}
+        h2 {
+            color: #c2185b;
+            border-bottom: 2px solid #fde2eb;
+            padding-bottom: 5px;
+        }
 
-.left{
-    background:#0f172a;
-    color:white;
-    padding:35px;
-}
+        ul {
+            line-height: 1.8;
+            padding-left: 20px;
+        }
 
-.right{
-    padding:35px;
-}
+        p {
+            line-height: 1.8;
+        }
 
-.section{
-    margin-bottom:30px;
-}
-
-.section h2{
-    font-size:21px;
-    margin-bottom:15px;
-    color:#7c3aed;
-}
-
-.left .section h2{
-    color:#60a5fa;
-}
-
-ul{
-    list-style:none;
-}
-
-ul li{
-    margin-bottom:10px;
-    line-height:1.6;
-}
-
-.skill{
-    margin-bottom:15px;
-}
-
-.skill-name{
-    font-size:14px;
-    margin-bottom:6px;
-}
-
-.bar{
-    height:8px;
-    background:#334155;
-    border-radius:10px;
-}
-
-.fill{
-    height:100%;
-    background:#60a5fa;
-    border-radius:10px;
-}
-
-.project-card{
-    background:#f8fafc;
-    padding:18px;
-    border-radius:14px;
-    margin-bottom:16px;
-    border-left:5px solid #7c3aed;
-}
-
-.project-card h3{
-    margin-bottom:8px;
-    color:#1e293b;
-}
-
-.project-card p{
-    color:#475569;
-    line-height:1.6;
-}
-
-.about-text{
-    line-height:1.8;
-    color:#475569;
-}
-
-@media(max-width:850px){
-    .main{
-        grid-template-columns:1fr;
-    }
-}
-</style>
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f8c8dc;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="top-bar">
+        Name: Aditi Murgude | Roll No: 100
+    </div>
 
     <div class="header">
-        <div class="profile">AM</div>
-        <h1>Aditi Sanjay Murgude</h1>
-        <p>Aspiring Web Developer | Computer Science Student</p>
+        <h1>Experiment 10</h1>
+        <h1>Resume Creation Using HTML & CSS</h1>
+        <h2>Aditi Sanjay Murgude</h2>
+        <p>Email: aditimurgude8165@gmail.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+        <p>Location: Kolhapur, Maharashtra</p>
     </div>
 
-    <div class="main">
+    <div class="resume-container">
 
-        <!-- LEFT -->
-        <div class="left">
+        <div class="left-panel">
+            <h2>Skills</h2>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Web Development</li>
+                <li>Communication</li>
+                <li>UI Design</li>
+                <li>Team Collaboration</li>
+            </ul>
 
-            <div class="section">
-                <h2>Contact</h2>
-                <ul>
-                    <li>📧 aditimurgude8165@gmail.com</li>
-                    <li>📱 +91 XXXXXXXXXX</li>
-                    <li>📍 Kolhapur, Maharashtra</li>
-                </ul>
-            </div>
+            <h2>Languages</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
 
-            <div class="section">
-                <h2>Skills</h2>
-
-                <div class="skill">
-                    <div class="skill-name">Problem Solving</div>
-                    <div class="bar"><div class="fill" style="width:90%"></div></div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-name">Web Development</div>
-                    <div class="bar"><div class="fill" style="width:85%"></div></div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-name">Communication</div>
-                    <div class="bar"><div class="fill" style="width:80%"></div></div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-name">Team Collaboration</div>
-                    <div class="bar"><div class="fill" style="width:75%"></div></div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-name">UI Design</div>
-                    <div class="bar"><div class="fill" style="width:70%"></div></div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Programming Languages</h2>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>Achievements</h2>
-                <ul>
-                    <li>Built multiple academic web projects</li>
-                    <li>Strong interest in technology & development</li>
-                    <li>Active learner in programming</li>
-                </ul>
-            </div>
-
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Chess</li>
+                <li>Cooking</li>
+                <li>Music</li>
+                <li>Badminton</li>
+                <li>Volleyball</li>
+            </ul>
         </div>
 
-        <!-- RIGHT -->
-        <div class="right">
+        <div class="right-panel">
+            <h2>Career Objective</h2>
+            <p>
+                Looking forward to building a career as a Web Developer where I can use
+                my programming and problem-solving skills to create useful applications.
+            </p>
 
-            <div class="section">
-                <h2>About Me</h2>
-                <p class="about-text">
-                    I am a 2nd year B.Tech Computer Science Engineering student at 
-                    DY Patil College of Engineering and Technology. Passionate about technology,
-                    programming, and web development, I enjoy building practical projects and learning
-                    modern software development skills.
-                </p>
-            </div>
+            <h2>Education</h2>
+            <ul>
+                <li>B.Tech Computer Science and Engineering</li>
+                <li>DY Patil College of Engineering and Technology</li>
+                <li>Currently in 2nd Year</li>
+            </ul>
 
-            <div class="section">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>B.Tech in Computer Science Engineering</strong></li>
-                    <li>DY Patil College of Engineering and Technology</li>
-                    <li>Currently in 2nd Year</li>
-                </ul>
-            </div>
+            <h2>Projects</h2>
+            <ul>
+                <li>Campus Lost and Found System</li>
+                <li>Event Management Website</li>
+                <li>Quiz Game Application</li>
+            </ul>
 
-            <div class="section">
-                <h2>Projects</h2>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Built multiple academic web projects</li>
+                <li>Strong interest in technology</li>
+                <li>Active learner in programming</li>
+            </ul>
 
-                <div class="project-card">
-                    <h3>Campus Lost and Found</h3>
-                    <p>
-                        Developed a web platform for students to report, search, and recover lost items within campus.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Event Management Website</h3>
-                    <p>
-                        Built a responsive website to manage event registrations, schedules, and announcements.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Quiz Game Application</h3>
-                    <p>
-                        Created an interactive quiz application with multiple questions, score tracking, and login system.
-                    </p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Chess</li>
-                    <li>Cooking New Recipes</li>
-                    <li>Listening to Music</li>
-                    <li>Badminton</li>
-                    <li>Volleyball</li>
-                </ul>
-            </div>
-
+            <h2>Declaration</h2>
+            <p>
+                I hereby declare that the above information is true to the best of my knowledge.
+            </p>
         </div>
+
     </div>
-</div>
+
+    <footer>
+        Web Development Lab
+    </footer>
 
 </body>
 </html>

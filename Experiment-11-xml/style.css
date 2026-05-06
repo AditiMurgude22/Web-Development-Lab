@@ -1,39 +1,59 @@
 library {
     display: block;
-    background-color: #f8fafc;
-    color: #1e293b;
-    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
     padding: 20px;
-    font-family: Verdana, sans-serif;
+    color: #444;
+}
+
+studentInfo {
+    display: block;
+    background-color: #f8c8dc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+studentInfo name,
+studentInfo rollNo,
+studentInfo experiment,
+studentInfo title {
+    display: block;
+    font-size: 18px;
+    margin: 6px 0;
+    color: #8b3a62;
+    font-weight: bold;
 }
 
 header {
     display: block;
-    font-size: 36px;
-    font-weight: bold;
-    color: white;
-    background-color: #6366f1;
     text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #c2185b;
+    margin: 20px 0;
     padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 book {
     display: block;
-    margin: 15px 0;
-    padding: 15px;
-    border-left: 6px solid #6366f1;
-    background-color: #e0e7ff;
-    border-radius: 8px;
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-left: 6px solid #f8c8dc;
 }
 
 title {
     display: block;
     font-size: 22px;
     font-weight: bold;
-    color: #312e81;
-    margin-bottom: 8px;
+    color: #c2185b;
+    margin-bottom: 10px;
 }
 
 author,
@@ -42,7 +62,12 @@ edition,
 price {
     display: block;
     font-size: 16px;
-    margin-left: 12px;
-    margin-top: 4px;
-    color: #334155;
+    margin: 6px 0;
+    color: #555;
+}
+
+price {
+    font-weight: bold;
+    color: #8b3a62;
+    font-size: 18px;
 }

@@ -1,161 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Staff Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 9 - HTML Form</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f5f9;
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f7;
+            color: #444;
         }
 
-        .top-bar {
-            background: #6366f1;
-            color: #fff;
+        .student-info {
+            padding: 20px 40px 10px;
+            font-weight: bold;
+            color: #8b3a62;
+        }
+
+        .header {
+            background-color: #f8c8dc;
             text-align: center;
-            padding: 8px;
-            font-size: 14px;
+            padding: 25px;
+            border-radius: 0 0 20px 20px;
         }
 
-        .box {
-            width: 75%;
+        .header h1, .header h2 {
+            margin: 8px;
+            color: #8b3a62;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 850px;
             margin: 30px auto;
-            background: #ffffff;
+        }
+
+        .section {
+            background-color: white;
             padding: 25px;
-            border-radius: 12px;
+            margin-bottom: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
 
         h2 {
-            text-align: center;
-            color: #4f46e5;
+            color: #c2185b;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
+        p {
+            line-height: 1.8;
         }
 
-        .field {
-            display: flex;
-            flex-direction: column;
+        fieldset {
+            border: 2px solid #fde2eb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            color: #c2185b;
+            font-weight: bold;
         }
 
         input, select, textarea {
-            padding: 8px;
-            border: 1px solid #cbd5e1;
-            border-radius: 6px;
-        }
-
-        .full {
-            grid-column: span 2;
-        }
-
-        .gender {
-            display: flex;
-            gap: 15px;
-            margin-top: 5px;
-        }
-
-        .btns {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        button {
-            flex: 1;
+            width: 100%;
             padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #e5b7c8;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            background-color: #f8c8dc;
+            color: #8b3a62;
+            font-weight: bold;
             border: none;
-            border-radius: 6px;
+            padding: 12px 20px;
+            border-radius: 8px;
             cursor: pointer;
+            margin-right: 10px;
         }
 
-        .submit {
-            background: #6366f1;
-            color: white;
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #fde2eb;
         }
 
-        .reset {
-            background: #e5e7eb;
+        footer {
+            text-align: center;
+            background-color: #f8c8dc;
+            padding: 15px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
-<div class="top-bar">
-    Aditi S Murgude | Roll No: 100
-</div>
+    <div class="student-info">
+        <h3>Name: Aditi Murgude</h3>
+        <h3>Roll No: 100</h3>
+    </div>
 
-<div class="box">
-    <h2>Employee Form</h2>
+    <div class="header">
+        <h1>Experiment 9</h1>
+        <h1>Study of HTML Form Elements</h1>
+        <h2>Employee Registration Form</h2>
+    </div>
 
-    <form>
-        <div class="grid">
+    <div class="container">
 
-            <div class="field">
-                <label>First Name</label>
-                <input type="text" required>
-            </div>
-
-            <div class="field">
-                <label>Last Name</label>
-                <input type="text" required>
-            </div>
-
-            <div class="field">
-                <label>Email</label>
-                <input type="email" required>
-            </div>
-
-            <div class="field">
-                <label>Department</label>
-                <select>
-                    <option>Select</option>
-                    <option>HR</option>
-                    <option>IT</option>
-                    <option>Sales</option>
-                    <option>Marketing</option>
-                </select>
-            </div>
-
-            <div class="field">
-                <label>Joining Date</label>
-                <input type="date">
-            </div>
-
-            <div class="field">
-                <label>Gender</label>
-                <div class="gender">
-                    <label><input type="radio" name="g"> Male</label>
-                    <label><input type="radio" name="g"> Female</label>
-                    <label><input type="radio" name="g"> Other</label>
-                </div>
-            </div>
-
-            <div class="field full">
-                <label>About</label>
-                <textarea rows="3"></textarea>
-            </div>
-
-            <div class="field full">
-                <label>Upload Resume</label>
-                <input type="file">
-            </div>
-
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>
+                HTML forms are used to collect user information through
+                different form elements like text boxes, radio buttons,
+                checkboxes, and dropdown menus.
+            </p>
         </div>
 
-        <br>
+        <div class="section">
+            <form>
 
-        <input type="checkbox" required> Information is correct
+                <fieldset>
+                    <legend>Personal Details</legend>
 
-        <div class="btns">
-            <button type="submit" class="submit">Submit</button>
-            <button type="reset" class="reset">Clear</button>
+                    First Name:
+                    <input type="text" required>
+
+                    Last Name:
+                    <input type="text" required>
+
+                    Email:
+                    <input type="email" required>
+
+                    Gender:
+                    <br>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+
+                    <br><br>
+
+                    Mobile Number:
+                    <input type="tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Work Information</legend>
+
+                    Department:
+                    <select>
+                        <option>HR</option>
+                        <option>IT</option>
+                        <option>Sales</option>
+                        <option>Marketing</option>
+                    </select>
+
+                    Joining Date:
+                    <input type="date">
+
+                    Upload Resume:
+                    <input type="file">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Other Details</legend>
+
+                    Address:
+                    <textarea rows="4"></textarea>
+
+                    <input type="checkbox" required>
+                    I accept all terms and conditions
+                </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
         </div>
 
-    </form>
-</div>
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p>
+                HTML forms are widely used in websites for registration,
+                login, feedback, and data collection purposes.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        Web Development Lab
+    </footer>
 
 </body>
 </html>

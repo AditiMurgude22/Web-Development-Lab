@@ -1,91 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-<xsl:output method="html" indent="yes"/>
-
-<xsl:template match="/">
-
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Aditi Book Collection</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2ff;
-            margin: 20px;
-        }
-
-        h2 {
-            text-align: center;
-            background-color: #7c3aed;
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            width: 60%;
-            margin: auto;
-            margin-bottom: 20px;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        th {
-            background-color: #4f46e5;
-            color: white;
-            padding: 12px;
-        }
-
-        td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        tr:nth-child(even) {
-            background-color: #e0e7ff;
-        }
-
-        tr:hover {
-            background-color: #c7d2fe;
-        }
-    </style>
-
+    <title>Aditi Digital Library</title>
 </head>
 
-<body>
+<body style="font-family:Arial; background-color:#fff5f7; margin:20px;">
 
-<h2>Aditi Digital Library</h2>
+    <div style="text-align:center; background:#f8c8dc; padding:15px; border-radius:10px;">
+        <h2 style="margin:0; color:#8b3a62;">Aditi Digital Library</h2>
+        <p style="margin:5px;">Book Collection Output</p>
+    </div>
 
-<table border="1">
-    <tr>
-        <th>Book Title</th>
-        <th>Author</th>
-        <th>Year</th>
-        <th>Price</th>
-    </tr>
+    <br>
 
-    <xsl:for-each select="library/book">
-        <xsl:sort select="price" data-type="number"/>
+    <table border="1" cellpadding="10" cellspacing="0"
+           style="margin:auto; border-collapse:collapse; text-align:center; width:85%;">
+
+        <tr style="background-color:#fde2eb; color:#8b3a62;">
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Country</th>
+            <th>Year</th>
+            <th>Price</th>
+        </tr>
 
         <tr>
-            <td><xsl:value-of select="title"/></td>
-            <td><xsl:value-of select="author"/></td>
-            <td><xsl:value-of select="year"/></td>
-            <td><xsl:value-of select="price"/></td>
+            <td>Atomic Habits</td>
+            <td>James Clear</td>
+            <td>USA</td>
+            <td>2018</td>
+            <td>450</td>
         </tr>
-    </xsl:for-each>
 
-</table>
+        <tr>
+            <td>Think and Grow Rich</td>
+            <td>Napoleon Hill</td>
+            <td>USA</td>
+            <td>1937</td>
+            <td>399</td>
+        </tr>
+
+        <tr>
+            <td>Ignited Minds</td>
+            <td>A.P.J Abdul Kalam</td>
+            <td>India</td>
+            <td>2002</td>
+            <td>350</td>
+        </tr>
+
+        <tr>
+            <td>The Psychology of Money</td>
+            <td>Morgan Housel</td>
+            <td>USA</td>
+            <td>2020</td>
+            <td>499</td>
+        </tr>
+
+        <tr>
+            <td>Ikigai</td>
+            <td>Hector Garcia</td>
+            <td>Japan</td>
+            <td>2016</td>
+            <td>420</td>
+        </tr>
+
+    </table>
 
 </body>
 </html>
-
-</xsl:template>
-</xsl:stylesheet>

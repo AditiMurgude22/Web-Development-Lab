@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="style.css"?>
 
 <library>
-    
+
+    <studentInfo>
+        <name>Aditi Murgude</name>
+        <rollNo>100</rollNo>
+        <experiment>Experiment 11</experiment>
+        <title>XML Document for Digital Library</title>
+    </studentInfo>
+
     <header>Aditi Digital Book Hub</header>
 
-    <book>
+    <book id="B001" category="Web Development">
         <title>Introduction to Web Development</title>
         <author>Jon Duckett</author>
         <publisher>Wiley India</publisher>
@@ -13,7 +19,7 @@
         <price>350</price>
     </book>
 
-    <book>
+    <book id="B002" category="Programming">
         <title>Python Programming</title>
         <author>Guido Rossum</author>
         <publisher>Tech Publications</publisher>
@@ -21,7 +27,7 @@
         <price>450</price>
     </book>
 
-    <book>
+    <book id="B003" category="Database">
         <title>Database Management Systems</title>
         <author>Korth</author>
         <publisher>McGraw Hill</publisher>
@@ -29,7 +35,7 @@
         <price>650</price>
     </book>
 
-    <book>
+    <book id="B004" category="Networking">
         <title>Computer Networks and Security</title>
         <author>Behrouz Forouzan</author>
         <publisher>Pearson</publisher>
@@ -37,7 +43,7 @@
         <price>550</price>
     </book>
 
-    <book>
+    <book id="B005" category="Programming">
         <title>Java Fundamentals</title>
         <author>Herbert Schildt</author>
         <publisher>Oracle Press</publisher>

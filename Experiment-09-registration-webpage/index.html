@@ -1,33 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Employee Form</title>
+    <meta charset="UTF-8">
+    <title>Experiment 9 - HTML Form</title>
 </head>
-<body style="font-family: Arial; background-color: #eef2f7;">
+<body>
 
-    <div style="text-align:center; padding:8px; background:#dbeafe;">
-        <b>Aditi S Murgude </b> | Roll No: 100
-    </div>
+    <h3>Name: Aditi Murgude</h3>
+    <h3>Roll No: 100</h3>
 
-    <h2 align="center">Employee Registration</h2>
+    <center>
+        <h1>Experiment 9</h1>
+        <h1>Study of HTML Form Elements</h1>
+        <h2>Employee Registration Form</h2>
+    </center>
+
+    <hr>
+
+    <h2>Introduction</h2>
+    <p>
+        HTML forms are used to collect user input such as text, email,
+        password, files, dates, and other information.
+    </p>
+
+    <hr>
 
     <form>
+
         <fieldset>
             <legend><b>Personal Details</b></legend>
 
-            First Name: <input type="text" required><br><br>
-            Last Name: <input type="text" required><br><br>
-            Email: <input type="email" required><br><br>
+            First Name:
+            <input type="text" required>
+            <br><br>
+
+            Last Name:
+            <input type="text" required>
+            <br><br>
+
+            Email:
+            <input type="email" required>
+            <br><br>
 
             Gender:
-            <input type="radio" name="g"> Male
-            <input type="radio" name="g"> Female
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <br><br>
+
+            Mobile Number:
+            <input type="tel">
         </fieldset>
 
         <br>
 
         <fieldset>
-            <legend><b>Work Info</b></legend>
+            <legend><b>Work Information</b></legend>
 
             Department:
             <select>
@@ -38,18 +65,44 @@
             </select>
             <br><br>
 
-            Joining Date: <input type="date"><br><br>
-            Resume: <input type="file">
+            Joining Date:
+            <input type="date">
+            <br><br>
+
+            Upload Resume:
+            <input type="file">
         </fieldset>
 
         <br>
 
-        <input type="checkbox" required> Accept Terms<br><br>
+        <fieldset>
+            <legend><b>Other Details</b></legend>
+
+            Address:
+            <br>
+            <textarea rows="4" cols="40"></textarea>
+            <br><br>
+
+            <input type="checkbox" required>
+            I accept all terms and conditions
+        </fieldset>
+
+        <br>
 
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
 
     </form>
+
+    <hr>
+
+    <h2>Conclusion</h2>
+    <p>
+        HTML forms are essential for collecting and processing user information
+        in websites and web applications.
+    </p>
+
+    <br><br>
 
 </body>
 </html>
