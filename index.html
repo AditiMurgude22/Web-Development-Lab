@@ -1,138 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditi | Web Development Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditi | Web Development Lab</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-        body {
-            min-height: 100vh;
-            background: #f8fafc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#f7e7e3,#e8eef7,#f4f1eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
 
-        .container {
-            background: white;
-            width: 90%;
-            max-width: 850px;
-            padding: 70px 50px;
-            border-radius: 28px;
-            box-shadow: 0 20px 50px rgba(148, 163, 184, 0.15);
-            text-align: center;
-            border: 1px solid #e2e8f0;
-        }
+.container{
+    width:90%;
+    max-width:900px;
+    background:rgba(255,255,255,0.65);
+    backdrop-filter:blur(14px);
+    border-radius:30px;
+    padding:70px 50px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
 
-        .badge {
-            display: inline-block;
-            background: #f1f5f9;
-            color: #64748b;
-            padding: 8px 18px;
-            border-radius: 30px;
-            font-size: 14px;
-            margin-bottom: 25px;
-            font-weight: 500;
-        }
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:25px;
+    background:#ffffff;
+    color:#7a6f6f;
+    font-size:14px;
+    margin-bottom:25px;
+    font-weight:600;
+}
 
-        h1 {
-            font-size: 52px;
-            color: #1e293b;
-            margin-bottom: 18px;
-            font-weight: 700;
-        }
+h1{
+    font-size:55px;
+    color:#3f3a39;
+    margin-bottom:15px;
+}
 
-        .name {
-            font-size: 22px;
-            color: #475569;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
+.name{
+    font-size:24px;
+    color:#6a5d5d;
+    font-weight:600;
+    margin-bottom:10px;
+}
 
-        .course {
-            font-size: 17px;
-            color: #64748b;
-            margin-bottom: 8px;
-        }
+.info{
+    color:#7b7b7b;
+    font-size:17px;
+    margin-bottom:8px;
+}
 
-        .desc {
-            font-size: 16px;
-            color: #94a3b8;
-            margin-top: 18px;
-            line-height: 1.6;
-            max-width: 550px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.desc{
+    margin-top:20px;
+    color:#6f6f6f;
+    font-size:16px;
+    line-height:1.7;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 35px;
-            text-decoration: none;
-            background: #0f172a;
-            color: white;
-            padding: 15px 34px;
-            border-radius: 14px;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 34px;
+    background:#8b7d7b;
+    color:white;
+    text-decoration:none;
+    border-radius:14px;
+    font-weight:600;
+    transition:.3s;
+}
 
-        .btn:hover {
-            background: #1e293b;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(15, 23, 42, 0.18);
-        }
+.btn:hover{
+    transform:translateY(-4px);
+    background:#756867;
+}
 
-        footer {
-            margin-top: 35px;
-            color: #94a3b8;
-            font-size: 14px;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 38px;
-            }
-
-            .container {
-                padding: 50px 30px;
-            }
-        }
-    </style>
+footer{
+    margin-top:35px;
+    color:#8a8a8a;
+    font-size:14px;
+}
+</style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="badge">Web Development Portfolio</div>
+<div class="container">
+    <div class="badge">Web Development Portfolio</div>
 
-        <h1>Web Development Lab</h1>
+    <h1>Web Development Lab</h1>
 
-        <div class="name">Aditi Sanjay Murgude</div>
-        <div class="course">B.Tech Computer Science Engineering</div>
-        <div class="course">DY Patil College of Engineering & Technology</div>
+    <div class="name">Aditi Sanjay Murgude</div>
+    <div class="info">B.Tech Computer Science Engineering</div>
+    <div class="info">DY Patil College of Engineering & Technology</div>
 
-        <p class="desc">
-            A collection of web development experiments including HTML, CSS, XML, XSLT, forms, tables, frames, and responsive web pages.
-        </p>
+    <p class="desc">
+        Collection of HTML, CSS, XML, XSLT and web design experiments showcasing practical web development concepts.
+    </p>
 
-        <a href="/Web-Development-Lab/experiments.html" class="btn">
-            View Experiments
-        </a>
+    <a href="/Web-Development-Lab/experiments.html" class="btn">View Experiments</a>
 
-        <footer>
-            © 2026 Aditi Sanjay Murgude
-        </footer>
-    </div>
+    <footer>© 2026 Aditi Sanjay Murgude</footer>
+</div>
 
 </body>
 </html>
