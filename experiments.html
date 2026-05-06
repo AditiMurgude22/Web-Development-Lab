@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiments</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiments</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family:Segoe UI,sans-serif;
-            background:#f5f5f5;
-            padding:30px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-        h1{
-            text-align:center;
-            color:#5c4343;
-            margin-bottom:30px;
-        }
+body{
+    background:linear-gradient(135deg,#f7e7e3,#e8eef7,#f4f1eb);
+    padding:35px;
+}
 
-        .grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-            max-width:1200px;
-            margin:auto;
-        }
+h1{
+    text-align:center;
+    color:#4e4544;
+    margin-bottom:40px;
+    font-size:42px;
+}
 
-        .card{
-            background:white;
-            padding:25px;
-            border-radius:18px;
-            box-shadow:0 6px 18px rgba(0,0,0,0.08);
-            text-align:center;
-        }
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
 
-        .card h3{
-            color:#444;
-            margin-bottom:15px;
-        }
+.card{
+    background:rgba(255,255,255,0.65);
+    backdrop-filter:blur(12px);
+    padding:28px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.07);
+    transition:.3s;
+    text-align:center;
+}
 
-        a{
-            display:block;
-            margin:8px 0;
-            text-decoration:none;
-            background:#bc8f8f;
-            color:white;
-            padding:10px;
-            border-radius:8px;
-        }
+.card:hover{
+    transform:translateY(-8px);
+}
 
-        a:hover{
-            background:#a97979;
-        }
-    </style>
+.icon{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#4f4645;
+    margin-bottom:18px;
+}
+
+.card a{
+    display:block;
+    text-decoration:none;
+    background:#8b7d7b;
+    color:white;
+    padding:12px;
+    margin:8px 0;
+    border-radius:10px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.card a:hover{
+    background:#756867;
+}
+</style>
 </head>
 <body>
 
@@ -61,72 +80,83 @@
 
 <div class="grid">
 
-    <div class="card">
-        <h3>Experiment 1</h3>
-        <a href="Experiment-01-Web-Technology-Basics/index.html">Basic Version</a>
-    </div>
+<div class="card">
+<div class="icon">🌐</div>
+<h3>Experiment 1</h3>
+<a href="Experiment-01-Web-Technology-Basics/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 2</h3>
-        <a href="Experiment-02-Static-Webpage/index.html">Open</a>
-    </div>
+<div class="card">
+<div class="icon">📄</div>
+<h3>Experiment 2</h3>
+<a href="Experiment-02-Static-Webpage/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 3</h3>
-        <a href="Experiment-03-Text-Formatting-Tags/index.html">Basic Version</a>
-        <a href="Experiment-03-Text-Formatting-Tags/css_version.html">CSS Version</a>
-    </div>
+<div class="card">
+<div class="icon">✍️</div>
+<h3>Experiment 3</h3>
+<a href="Experiment-03-Text-Formatting-Tags/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 4</h3>
-        <a href="Experiment-04-List-Tags/index.html">Open</a>
-    </div>
+<div class="card">
+<div class="icon">📋</div>
+<h3>Experiment 4</h3>
+<a href="Experiment-04-List-Tags/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 5</h3>
-        <a href="Experiment-05-Image-Tag/index.html">Open</a>
-    </div>
+<div class="card">
+<div class="icon">🖼️</div>
+<h3>Experiment 5</h3>
+<a href="Experiment-05-Image-Tag/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 6</h3>
-        <a href="Experiment-06-Frames/index.html">Open</a>
-    </div>
+<div class="card">
+<div class="icon">🪟</div>
+<h3>Experiment 6</h3>
+<a href="Experiment-06-Frames/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 7</h3>
-        <a href="Experiment-07-Links/text_as_link.html">Basic Version</a>
-        <a href="Experiment-07-Links/css_version.html">CSS Version</a>
-    </div>
+<div class="card">
+<div class="icon">🔗</div>
+<h3>Experiment 7</h3>
+<a href="Experiment-07-Links/text_as_link.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 8</h3>
-        <a href="Experiment-08-Table/index.html">Open</a>
-    </div>
+<div class="card">
+<div class="icon">📊</div>
+<h3>Experiment 8</h3>
+<a href="Experiment-08-Table/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 9</h3>
-        <a href="Experiment-09-registration-webpage/index.html">Open</a>
-    </div>
+<div class="card">
+<div class="icon">📝</div>
+<h3>Experiment 9</h3>
+<a href="Experiment-09-registration-webpage/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 10</h3>
-        <a href="Experiment-10-resume-as-webpage/index.html">Open</a>
-    </div>
+<div class="card">
+<div class="icon">💼</div>
+<h3>Experiment 10</h3>
+<a href="Experiment-10-resume-as-webpage/index.html">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 11</h3>
-        <a href="Experiment-11-xml/library.xml">Open</a>
-    </div>
+<div class="card">
+<div class="icon">📚</div>
+<h3>Experiment 11</h3>
+<a href="Experiment-11-xml/library.xml">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 12</h3>
-        <a href="Experiment-12-XSLT/book_library.xml">Open</a>
-    </div>
+<div class="card">
+<div class="icon">⚙️</div>
+<h3>Experiment 12</h3>
+<a href="Experiment-12-XSLT/book_library.xml">Open</a>
+</div>
 
-    <div class="card">
-        <h3>Experiment 13</h3>
-        <a href="Experiment-13/index.html">Open</a>
-    </div>
+<div class="card">
+<div class="icon">🚀</div>
+<h3>Experiment 13</h3>
+<a href="Experiment-13/index.html">Open</a>
+</div>
 
 </div>
 
